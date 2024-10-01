@@ -44,6 +44,10 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+// --- search icon ---
 const searchContainer = document.querySelector('#search');
 const searchInput = document.querySelector('.search-input');
 const searchIcon = document.querySelector('.search-icon');
@@ -53,14 +57,50 @@ searchInput.addEventListener('focus', () => {
     searchContainer.classList.add('active');
 });
 
-// Remove the active class if the search input is empty and loses focus
-// searchInput.addEventListener('blur', () => {
-//     if (searchInput.value.trim() === '') {
-//         searchContainer.classList.remove('active');
-//     }
-// });
-
 // Remove the active class when clicking on the #search
 searchIcon.addEventListener('click', () => {
   searchContainer.classList.contains('active') ? searchContainer.classList.remove('active') : searchContainer.classList.add('active')
+});
+
+
+
+
+// --- Login-signup icon ---
+const loginIcon = document.getElementById('login')
+const popup = document.getElementById('popup');
+
+// Toggle the visibility of the popup
+loginIcon.addEventListener('click', () => {
+    popup.classList.toggle('hidden');
+});
+
+// Close the popup if clicked outside
+window.addEventListener('click', (event) => {
+    if (!loginIcon.contains(event.target) && !popup.contains(event.target)) {
+        popup.classList.add('hidden');
+    }
+});
+
+
+
+
+// --- shopping cart icon ---
+const shoppingCartIcon = document.getElementById('shopping-cart');
+const cartPanel = document.getElementById('cart-panel');
+const closeIcon = document.querySelector('.close-icon');
+
+// Open the cart panel (slide in from right)
+shoppingCartIcon.addEventListener('click', () => {
+  cartPanel.classList.remove('hidden');
+  setTimeout(() => {
+    cartPanel.classList.add('open'); 
+  }, 100); 
+});
+
+// Close the cart panel (slide out to right)
+closeIcon.addEventListener('click', () => {
+  cartPanel.classList.remove('open'); 
+  setTimeout(() => {
+    cartPanel.classList.add('hidden'); 
+  }, 500); 
 });
