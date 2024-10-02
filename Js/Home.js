@@ -104,3 +104,9 @@ closeIcon.addEventListener('click', () => {
     cartPanel.classList.add('hidden'); 
   }, 500); 
 });
+
+// //  Toggle the Burger Menu
+// document.getElementById("burger-menu").addEventListener("click", function() {
+//   const navItems = document.getElementById("nav-items");
+//   navItems.classList.toggle("show");
+// });
