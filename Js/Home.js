@@ -42,28 +42,22 @@ const showSlider = () => {
 
 $(document).ready(function(){
   $('.lazy-slider').slick({
-      lazyLoad: 'ondemand', 
-      infinite: false,       
-      slidesToShow: 4,      
-      slidesToScroll: 1,    
-      dots: false,          
-      arrows: true,        
-      nextArrow: '<button type="button" class="slick-next"><svg fill="#000000" height="16px" width="16px" viewBox="0 0 512 512" stroke="#000000" stroke-width="20"><path d="M388.418,240.923L153.751,6.256c-8.341-8.341-21.824-8.341-30.165,0s-8.341,21.824,0,30.165L343.17,256.005 L123.586,475.589c-8.341,8.341-8.341,21.824,0,30.165c4.16,4.16,9.621,6.251,15.083,6.251c5.461,0,10.923-2.091,15.083-6.251 l234.667-234.667C396.759,262.747,396.759,249.264,388.418,240.923z"/></svg></button>',
-      prevArrow: '<button type="button" class="slick-prev"><svg fill="#000000" height="16px" width="16px" viewBox="0 0 512 512" stroke="#000000" stroke-width="20"><path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0 L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251 c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"/></svg></button>',
-      // responsive: [
-      //     {
-      //         breakpoint: 768, // For smaller screens, adjust slidesToShow
-      //         settings: {
-      //             slidesToShow: 2
-      //         }
-      //     },
-      //     {
-      //         breakpoint: 480, // For mobile screens
-      //         settings: {
-      //             slidesToShow: 1
-      //         }
-      //     }
-      // ]
+    lazyLoad: 'ondemand', 
+    infinite: false,       
+    slidesToShow: 4,      
+    slidesToScroll: 1,    
+    dots: false,          
+    arrows: true,        
+    nextArrow: '<button type="button" class="slick-next"><svg fill="#000000" height="16px" width="16px" viewBox="0 0 512 512" stroke="#000000" stroke-width="20"><path d="M388.418,240.923L153.751,6.256c-8.341-8.341-21.824-8.341-30.165,0s-8.341,21.824,0,30.165L343.17,256.005 L123.586,475.589c-8.341,8.341-8.341,21.824,0,30.165c4.16,4.16,9.621,6.251,15.083,6.251c5.461,0,10.923-2.091,15.083-6.251 l234.667-234.667C396.759,262.747,396.759,249.264,388.418,240.923z"/></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg fill="#000000" height="16px" width="16px" viewBox="0 0 512 512" stroke="#000000" stroke-width="20"><path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0 L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251 c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"/></svg></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,    
+        }
+      }
+    ],
   });
 });
 
@@ -128,11 +122,6 @@ closeIcon.addEventListener('click', () => {
   }, 500); 
 });
 
-// //  Toggle the Burger Menu
-// document.getElementById("burger-menu").addEventListener("click", function() {
-//   const navItems = document.getElementById("nav-items");
-//   navItems.classList.toggle("show");
-// });
 
 
 
@@ -159,41 +148,41 @@ window.addEventListener('scroll', function() {
 
 
 // --- burger menu ---
-
-// let menuBtn = document.querySelector('#burger-menu');
-
-// menuBtn.addEventListener('click', function(){
-// 	menuBtn.classList.toggle('active');
-// })
-
-
 const burgerMenuIcon = document.getElementById('menu-icon');
 const menuPanel = document.getElementById('menu-panel');
 const closeIcon2 = document.querySelector('#menu-close-icon');
 
-
-// Open the cart panel (slide in from left)
-
-// Open the cart panel (slide in from right)
 burgerMenuIcon.addEventListener('click', () => {
+  // Open the menu panel (slide in from right)
   menuPanel.classList.remove('hidden');
   setTimeout(() => {
     menuPanel.classList.add('open'); 
   }, 100); 
 });
 
-// Close the cart panel (slide out to right)
 closeIcon2.addEventListener('click', () => {
+  // Close the menu panel (slide out to right)
   menuPanel.classList.remove('open'); 
   setTimeout(() => {
     menuPanel.classList.add('hidden'); 
   }, 500); 
 });
 
-// Close the cart panel (slide out to left)
-// burgerMenuIcon.addEventListener('click', () => {
-//   menuPanel.classList.remove('open'); 
-//   setTimeout(() => {
-//     menuPanel.classList.add('hidden'); 
-//   }, 500); 
-// });
+
+
+// swiper slider shows in responsive mode
+const swiper = new Swiper('.swiper', {
+  effect: "coverflow",
+  lazy: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  // loop: true,
+});
