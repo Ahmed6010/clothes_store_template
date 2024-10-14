@@ -110,10 +110,18 @@ closeIcon2.addEventListener('click', () => {
 
 // Change the number of grid columns ------------
 document.getElementById('columns').addEventListener('change', function() {
-  const grid = document.getElementById('products-grid');
   const columns = this.value;
-  grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+  columns == 3 ? updateProductItemWidth('30%') : updateProductItemWidth('25%')
+
 });
+
+
+const updateProductItemWidth = (newWidth) => {
+  const productItems = document.querySelectorAll('.product-item');
+  productItems.forEach(item => {
+    item.style.width = newWidth;
+  });
+}
 
 
 
@@ -131,6 +139,26 @@ document.querySelectorAll('.toggle-div').forEach(title => {
     icon.classList.toggle('opened');
   });
 });
+
+
+
+// Function to check if the label text is overflowing its container
+function checkLabelOverflow() {
+  const radioLabels = document.querySelectorAll('.radio-label');
+
+  radioLabels.forEach(label => {
+    const container = label.parentElement;
+    
+    if (label.scrollWidth > container.clientWidth) {
+      label.classList.add('scroll');
+    } else {
+      label.classList.remove('scroll');
+    }
+  });
+}
+
+checkLabelOverflow();
+window.addEventListener('resize', checkLabelOverflow);
 
 
 
