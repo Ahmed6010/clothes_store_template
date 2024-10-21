@@ -3,6 +3,7 @@
 const searchContainer = document.querySelector('#search');
 const searchInput = document.querySelector('.search-input');
 const searchIcon = document.querySelector('.search-icon');
+const closeSearchIcon = document.querySelector('.close-search-icon');
 
 // Detect when the user starts typing and keep the search input open
 searchInput.addEventListener('focus', () => {
@@ -11,8 +12,18 @@ searchInput.addEventListener('focus', () => {
 
 // Remove the active class when clicking on the #search
 searchIcon.addEventListener('click', () => {
-  searchContainer.classList.contains('active') ? searchContainer.classList.remove('active') : searchContainer.classList.add('active')
+  searchIcon.classList.toggle('hidden')
+  closeSearchIcon.classList.toggle('hidden')
+  searchContainer.classList.add('active')
+  // searchContainer.classList.contains('active') ? searchContainer.classList.remove('active') : searchContainer.classList.add('active')
 });
+
+// change search icon to close ( X ) 
+closeSearchIcon.addEventListener('click', () => {
+  closeSearchIcon.classList.toggle('hidden')
+  searchIcon.classList.toggle('hidden')
+  searchContainer.classList.remove('active')
+})
 
 
 

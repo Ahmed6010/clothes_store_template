@@ -72,6 +72,14 @@ nav {
   display: inline-block;
 }
 
+#search .close-search-icon.hidden{
+  display: none;
+}
+
+#search .search-icon.hidden{
+  display: none;
+} 
+
 .search-input {
   width: 0;
   height: 1.75rem;
@@ -98,6 +106,10 @@ nav {
 #search.active .search-input {
   width: 12.5rem; 
   opacity: 1;
+}
+
+#search.active .close-search-icon path{
+  stroke: #d0473e;
 }
 
 #nav-items a::after {
@@ -332,6 +344,7 @@ nav {
 }
 
 .close-icon {
+  padding: 0 1rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -362,6 +375,8 @@ nav {
   margin-top: 0.5rem;
 }
 
+
+/* product page */
 .product-page {
   height: auto;
   display: flex;
@@ -1046,6 +1061,7 @@ footer {
   border: 2px solid #555555;
   border-radius: 50%;
   transition: border-color 0.3s ease;
+  cursor: pointer;
 }
 
 #social-media-icons svg {
@@ -1100,6 +1116,7 @@ footer {
   font-size: 1rem;
   padding: 0.5rem;
   color: #f5f5f5;
+  cursor: pointer;
 } 
 
 .subscribe-button:hover {

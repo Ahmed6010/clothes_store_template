@@ -132,6 +132,10 @@
     justify-content: center;
   }
 
+  #store-detail {
+    flex-direction: column;
+  }
+
   #navigation {
     grid-area: navigation;
     /* height: max-content; */
