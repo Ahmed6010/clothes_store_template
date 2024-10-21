@@ -1,0 +1,325 @@
+@media (min-width: 290px){
+  nav {
+    width: 100%;
+  }
+
+  #nav-icons {
+    margin-right: 0;
+  }
+
+  #logo {
+    margin-left: 0;
+  }
+
+  #menu-icon {
+    display: inline;
+  }
+
+  #nav-items {
+    display: none;
+  }
+
+  #menu-header {
+    padding: 0.37rem;
+  }
+
+  #menu-panel {
+    width: 100%;
+  }
+
+  #menu-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .cart-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .cart-panel {
+    width: 100%
+  }
+
+  .cart-header {
+    padding: 0.37rem;
+  }
+
+  .empty-cart-img {
+    width: 8rem;
+  }
+
+  .empty-text {
+    font-size: 1rem;
+  }
+
+  .suggestion-text {
+    font-size: 0.875rem;
+  }
+
+  #login, #wishlist {
+    display: none;
+  }
+
+
+ 
+
+  .cart-section {
+    width: 95%;
+    max-width: 95%;
+    overflow-x: hidden;
+    padding: 1rem;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+
+  /* Customize the scrollbar */
+  .table-container::-webkit-scrollbar {
+    height: 0.65rem; 
+  }
+
+  .table-container::-webkit-scrollbar-track {
+    background: #f2f2f2; 
+    border-radius: 5px; 
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: #d0473e; 
+    border: 2px solid #ffffff; 
+    border-radius: 5px; 
+    background-clip: padding-box; 
+  }
+
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #a83731; 
+  }
+
+  .cart-section h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .cart-table th {
+    font-size: 1rem;
+  }
+
+  .cart-totals {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+
+
+
+  #footer-part-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2rem;
+    grid-template-areas: 
+    " about-us           about-us "
+    " navigation           customer "
+    " contact-us           contact-us "
+    ;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  #about-us {
+    grid-area: about-us;
+    width: auto;
+    justify-content: center;
+  }
+
+  #store-detail {
+    flex-direction: column;
+  }
+
+  #location p, #phone p{
+    text-wrap: wrap;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  #navigation {
+    grid-area: navigation;
+    /* height: max-content; */
+  }
+
+  #customer-service {
+    grid-area: customer;
+    /* height: max-content; */
+  }
+
+  #contact-us {
+    grid-area: contact-us;
+    /* height: max-content; */
+  }
+
+
+  #footer-part-1 h3 {
+    font-size: 1rem;
+  }
+
+  #footer-part-1 p, #footer-part-1 a {
+    font-size: 0.875rem;
+  }
+
+  #footer-part-2 {
+    font-size: 0.875rem;
+  }
+
+  #social-media-icons div {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+}
+
+
+
+
+
+
+@media (min-width: 600px){
+  #menu-panel {
+    width: 60%;
+  }
+
+  .cart-panel {
+    width: 60%;
+  }
+
+  .table-container {
+    border: 1px solid #e0e0e0;
+  }
+  .cart-totals {
+    width: 50%;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+  
+}
+
+
+
+@media (min-width: 768px){
+  #menu-header {
+    padding: 0.72rem;
+  }
+
+  .cart-header {
+    padding: 0.7rem;
+  }
+
+  #menu-panel {
+    width: 40%;
+  }
+
+  .cart-panel {
+    width: 40%;
+  }
+
+  .cart-section {
+    width: 90%;
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  #footer-part-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    " about-us           about-us           about-us "
+    " navigation           customer           contact-us "
+    ;
+  }
+}
+
+
+
+@media (min-width: 1024px){
+  #menu-icon {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+  }
+
+  #login, #wishlist {
+    display: inline;
+  }
+   
+  #logo {
+    margin-left: 2rem;
+  }
+
+  #nav-icons {
+    margin-right: 2rem;
+  }
+
+  .cart-panel {
+    width: 25rem;
+  }
+
+  .cart-section {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .cart-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cart-table th {
+    font-size: 1.25rem;
+  }
+
+  .cart-totals {
+    width: 40%;
+    margin-top: 2rem;
+  }
+
+
+  footer {
+    padding: 3rem;
+  }
+
+  #footer-part-1 h3 {
+    font-size: 1.125rem;
+  }
+
+  #footer-part-1 p, #footer-part-1 a {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+@media (min-width: 1440px){
+  .cart-totals {
+    width: 30%;
+  }
+}
+
+
+@media (min-width: 2000px){
+  .cart-section {
+    width: 70%;
+    max-width: 70%;
+    padding: 1.5rem;
+  }
+}
