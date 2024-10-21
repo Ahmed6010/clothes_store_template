@@ -404,7 +404,6 @@ nav {
 .cart-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 3rem;
   color: #111111;
 }
 
@@ -430,6 +429,10 @@ thead tr th:nth-child(5) {
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
 }
+
+.cart-table tr:last-child td {
+  border-bottom: none;
+} 
 
 .cart-table th {
   font-size: 1.25rem;
@@ -558,25 +561,27 @@ thead tr th:nth-child(5) {
 
 
 
+.empty-cart-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
 
+.empty-cart-container p {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #111111;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.empty-cart-svg {
+  width: 20rem;
+  height: 20rem;
+  background-repeat: no-repeat;
+}
 
 
 

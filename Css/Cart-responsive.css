@@ -179,7 +179,17 @@
     width: 2rem;
     height: 2rem;
   }
+
+
+  /* empty cart image */
+  .empty-cart-svg {
+    width: 10rem;
+    height: 10rem;
+  }
   
+  .empty-cart-container p {
+    font-size: 1.25rem;
+  }
 }
 
 
@@ -206,6 +216,13 @@
   footer {
     padding: 3rem;
   }
+
+
+    /* empty cart image */
+    .empty-cart-svg {
+      width: 12rem;
+      height: 12rem;
+    }
   
 }
 
@@ -243,6 +260,17 @@
     " navigation           customer           contact-us "
     ;
   }
+
+
+    /* empty cart image */
+    .empty-cart-svg {
+      width: 16rem;
+      height: 16rem;
+    }
+    
+    .empty-cart-container p {
+      font-size: 1.5rem;
+    }
 }
 
 
@@ -302,6 +330,18 @@
 
   #footer-part-1 p, #footer-part-1 a {
     font-size: 1rem;
+  }
+
+
+
+  /* empty cart image */
+  .empty-cart-svg {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .empty-cart-container p {
+    font-size: 1.875rem;
   }
 }
 
