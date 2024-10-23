@@ -1,0 +1,473 @@
+@media (min-width: 290px){
+  nav {
+    width: 100%;
+  }
+
+  #nav-icons {
+    margin-right: 0;
+  }
+
+  #logo {
+    margin-left: 0;
+  }
+
+  #menu-icon {
+    width: 56px;
+    display: inline;
+  }
+
+  #nav-items {
+    display: none;
+  }
+
+  #menu-header {
+    padding: 0.7rem;
+  }
+
+  #menu-panel {
+    width: 100%;
+  }
+
+  #menu-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .cart-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .cart-panel {
+    width: 100%
+  }
+
+  .cart-header {
+    padding: 0.7rem;
+  }
+
+  .empty-cart-img {
+    width: 8rem;
+  }
+
+  .empty-text {
+    font-size: 1rem;
+  }
+
+  .suggestion-text {
+    font-size: 0.875rem;
+  }
+
+  #login, #wishlist {
+    display: none;
+  }
+
+
+
+  .wishlist-container {
+    width: 90%;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .wishlist-container > h2 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.875rem;
+  }
+
+  .item {
+    /* display: unset; */
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    row-gap: 1rem;
+  }
+
+  .delete-btn {
+    width: 0.75rem;
+    height: 0.75rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .delete-btn-sm {
+    display: flex;
+  }
+
+  .product-image {
+    width: 60%;
+    /* float: left; */
+    /* margin-right: 0.5rem; */
+  }
+
+  .product-details {
+    width: auto;
+    row-gap: 0.5rem;
+    /* display: unset; */
+  }
+ 
+  .product-name {
+    font-size: 1.25rem;
+    display: inline-block;
+  }
+
+  .full-price {
+    font-size: 0.875rem;
+  }
+
+  .discount-price {
+    font-size: 0.875rem;
+  }
+
+
+  .select-option .btn {
+    width: 100%;
+    padding: 5px;
+    background-color: #d0473e;
+  }
+
+
+
+  #footer-part-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2rem;
+    grid-template-areas: 
+    " about-us           about-us "
+    " navigation           customer "
+    " contact-us           contact-us "
+    ;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  #about-us {
+    grid-area: about-us;
+    width: auto;
+    justify-content: center;
+  }
+
+  #store-detail {
+    flex-direction: column;
+  }
+
+  #location p, #phone p{
+    text-wrap: wrap;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  #navigation {
+    grid-area: navigation;
+    /* height: max-content; */
+  }
+
+  #customer-service {
+    grid-area: customer;
+    /* height: max-content; */
+  }
+
+  #contact-us {
+    grid-area: contact-us;
+    /* height: max-content; */
+  }
+
+
+  #footer-part-1 h3 {
+    font-size: 1rem;
+  }
+
+  #footer-part-1 p, #footer-part-1 a {
+    font-size: 0.875rem;
+  }
+
+  #footer-part-2 {
+    font-size: 0.875rem;
+  }
+
+  #social-media-icons div {
+    width: 2rem;
+    height: 2rem;
+  }
+
+
+
+
+    /* empty wishlist image */
+    .empty-wishlist-svg {
+      width: 10rem;
+      height: 10rem;
+    }
+    
+    .empty-wishlist-container p {
+      font-size: 1.25rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 450px){
+  .product-image {
+    width: 50%;
+  }
+
+  .product-name {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 600px){
+  #menu-panel {
+    width: 45%;
+  }
+
+  .cart-panel {
+    width: 45%;
+  }
+
+
+  .item {
+    flex-direction: unset;
+  }
+
+  .product-image {
+    width: 45%;
+  }
+
+  .product-details {
+    width: 55%;
+  }
+
+  .delete-btn-sm {
+    display: none;
+  }
+  
+  .delete-btn {
+    display: inline;
+  } 
+
+  footer {
+    padding: 3rem;
+  }
+
+
+    /* empty wishlist image */
+    .empty-wishlist-svg {
+      width: 12rem;
+      height: 12rem;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 700px){
+  .product-image {
+    width: 35%;
+  }
+
+  .product-details {
+    width: 65%;
+  }
+
+  .product-details {
+    row-gap: 1rem;
+  }
+
+  .select-option .btn {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #d0473e;
+  }
+
+
+
+  #footer-part-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    " about-us           about-us           about-us "
+    " navigation           customer           contact-us "
+    ;
+  }
+
+  
+  /* empty wishlist image */
+  .empty-wishlist-svg {
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  .empty-wishlist-container p {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 800px){
+  #menu-icon {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+  }
+
+  #login, #wishlist {
+    display: inline;
+  }
+   
+  #logo {
+    margin-left: 2rem;
+  }
+
+  #nav-icons {
+    margin-right: 2rem;
+  }
+
+  .cart-panel {
+    width: 25rem;
+  }
+
+  
+  .product-image {
+    width: 30%;
+  }
+
+  .product-details {
+    width: 70%;
+    row-gap: 1rem;
+  }
+
+  .select-option .btn {
+    width: auto;
+    padding: 5px;
+    background-color: #d0473e;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+
+  #footer-part-1 h3 {
+    font-size: 1.125rem;
+  }
+
+  #footer-part-1 p, #footer-part-1 a {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+@media (min-width: 900px){
+  .product-image {
+    width: 28%;
+  }
+
+  .product-details {
+    width: 72%;
+  }
+}
+
+
+
+@media (min-width: 1024px){
+  .wishlist-container {
+    width: 80%;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .product-details {
+    width: 80%;
+  }
+
+
+  footer {
+    padding: 3rem;
+  }
+
+  #footer-part-1 h3 {
+    font-size: 1.125rem;
+  }
+
+  #footer-part-1 p, #footer-part-1 a {
+    font-size: 1rem;
+  }
+
+
+  
+  /* empty wishlist image */
+  .empty-wishlist-svg {
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .empty-wishlist-container p {
+    font-size: 1.875rem;
+  }
+}
+
+
+@media (min-width: 1124px){
+  .product-image {
+    width: 20%;
+  }
+   
+  footer {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #footer-part-1 {
+    display: flex;
+    /* column-gap: 2rem; */
+  }
+
+  #about-us {
+    width: 40%;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1440px){
+  .wishlist-container {
+    width: 70%;
+  }
+}
+
+
+
+@media (min-width: 2560px) {
+  .wishlist-container {
+    width: 50%;
+  }
+}
