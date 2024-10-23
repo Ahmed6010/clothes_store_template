@@ -12,6 +12,7 @@
   }
 
   #menu-icon {
+    width: 56px;
     display: inline;
   }
 
@@ -20,7 +21,7 @@
   }
 
   #menu-header {
-    padding: 0.37rem;
+    padding: 0.7rem;
   }
 
   #menu-panel {
@@ -40,7 +41,7 @@
   }
 
   .cart-header {
-    padding: 0.37rem;
+    padding: 0.7rem;
   }
 
   .empty-cart-img {
@@ -263,11 +264,11 @@
 
 @media (min-width: 600px){
   #menu-panel {
-    width: 60%;
+    width: 45%;
   }
 
   .cart-panel {
-    width: 60%;
+    width: 45%;
   }
 
   .slider-main-image {
