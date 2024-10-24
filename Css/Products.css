@@ -513,12 +513,12 @@ nav {
 }
 
 .filter-section .collapsible-content::-webkit-scrollbar-thumb {
-  background-color: #d0473e; /* Scrollbar thumb (the draggable part) */
+  background-color: #d0473e; 
   border-radius: 5px;
 }
 
 .filter-section .collapsible-content::-webkit-scrollbar-track {
-  background-color: #dddddd; /* Scrollbar track (the background) */
+  background-color: #dddddd; 
   border-radius: 5px;
 }
 

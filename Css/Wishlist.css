@@ -509,23 +509,6 @@ nav {
   color: #777777;
 }
 
-.select-option .btn {
-  background-color: #777777;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.select-option .btn:hover {
-  background-color: #d0473e;
-}
-
-
-
 .empty-wishlist-container {
   width: 100%;
   height: auto;

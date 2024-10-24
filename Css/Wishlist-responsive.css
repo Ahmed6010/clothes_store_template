@@ -119,12 +119,6 @@
   }
 
 
-  .select-option .btn {
-    width: 100%;
-    padding: 5px;
-    background-color: #d0473e;
-  }
-
 
 
   #footer-part-1 {
@@ -294,11 +288,6 @@
     row-gap: 1rem;
   }
 
-  .select-option .btn {
-    width: auto;
-    padding: 10px 20px;
-    background-color: #d0473e;
-  }
 
 
 
@@ -364,11 +353,6 @@
     row-gap: 1rem;
   }
 
-  .select-option .btn {
-    width: auto;
-    padding: 5px;
-    background-color: #d0473e;
-  }
 
   footer {
     padding: 3rem;
